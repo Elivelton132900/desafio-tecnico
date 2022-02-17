@@ -1,0 +1,74 @@
+@media only screen and (max-width: 640px) {
+    .imagens {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    table {
+        width: 100vw;
+    }
+
+    .circuloContainer {
+        width: 100vw;
+    }
+
+    tr .statusTd {
+        align-items: center;
+    }
+
+    tr th {
+        padding-left: 0;
+    }
+
+    tr th:nth-child(1) {
+        padding-left: 1.5rem;
+    }
+
+    tr td {
+        padding: 0;
+    }
+
+    tr td:nth-child(1) {
+        padding-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    tr th {
+        width: 29%;
+    }
+
+    tr th:nth-child(3) {
+        width: 32%;
+        text-align: left;
+        padding-left: 20px;
+    } 
+
+    tr td {
+        width: 29%;
+        vertical-align: super;
+    }
+    
+    tr .statusTd {
+        display: flex;
+        width: 37%;
+
+        flex-direction: column;
+    }
+
+    .imagens {
+        display: inline;
+        width: 120px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .imagens .lixeira {
+        margin-left: 5%;
+    }
+
+    td td:nth-child(2) {
+        width: 20%;
+    }
+}

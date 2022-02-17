@@ -1,0 +1,165 @@
+.containerForm {
+    background-color: #F1F1F1;
+    min-height: 93vh;
+    min-width: 100vw;
+    margin-top: 7vh;
+}
+
+.wrapForm {
+    margin-left: 4vw;
+    margin-bottom: 20px;
+}
+
+.wrapForm .voltarPagina {
+    color: #40CFCB;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5vh;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.wrapForm .seta {
+    font-size: 26px;
+}
+
+form {
+    max-width: 1044px;
+    width: 76vw;
+    border-radius: 5px;
+    background-color: white;
+    height: 55vh;
+    -webkit-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.28); 
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.16);
+}
+
+form .cabecalhoForm, form .containerInputs {
+    margin-left: 4vw;
+}
+
+form .containerCabecalho {
+    padding-top: 3vh;
+}
+
+form .cabecalhoForm {
+    color: #343224;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+form .containerInputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .containerInput {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+}
+
+form .containerInput label {
+    color: #343224;
+    font-size: 14px;
+}
+
+form .containerInput input {
+    color: none;
+    background-color: none;
+    width: 30.5vw;
+    max-width: 404px;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    height: 3vh;
+    border: none;
+    -webkit-box-shadow: 0px 0px 0px 2px #D9D9D9; 
+    box-shadow: 0px 0px 0px 1px #D9D9D9;
+    border-radius: 4px;
+    padding-left: 15px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #B5B5B5;
+    font-style: italic;
+}
+
+input:-moz-placeholder {
+    font-size: 14px;
+    color: #B5B5B5;
+    font-style: italic;
+}
+
+textarea:-moz-placeholder {
+    font-size: 14px;
+    color: #B5B5B5;
+    font-style: italic;
+}
+
+.containerButtons {
+    margin-left: 4vw;
+    margin-right: 3vw;
+    display: flex;
+    width: 68vw;
+    margin-top: -12vh;
+    justify-content: space-between;
+    max-width: calc(1044px - 7.6vw);
+}
+
+.containerButtons button {
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 20vw;
+    max-width: 175px;
+    border-radius: 5px;
+    transition: 500ms ease-in-out;
+}
+
+.containerButtons .cancelar {
+    color: #707070;
+    background-color: #CECECE;
+}
+
+.containerButtons .salvar {
+    color: white;
+    background-color: #009E9A;
+    height: auto;
+}
+
+.containerButtons .cancelar:hover {
+    color: white;
+    background-color: rgb(226, 90, 90);
+}
+
+.containerButtons .salvar:hover {
+    background-color: rgb(14, 142, 201);
+}
+
+.containerCorpoModal {
+    display: flex;
+    justify-content: center;
+}
+
+.modalButtonContainer {
+    text-align: center;
+}
+
+.modalButtonContainer .fecharButton {
+    cursor: pointer;
+    width: fit-content;
+    height: 5vh;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ff6961;
+    transition: 500ms ease-in-out;
+}
+
+.modalButtonContainer .fecharButton:hover {
+    background-color: #ff0000;
+}

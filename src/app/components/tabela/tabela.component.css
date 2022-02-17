@@ -1,0 +1,119 @@
+table {
+    width: 77.7vw;
+    border-collapse: collapse;
+    margin: 0;
+    -webkit-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.05); 
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.05);
+}
+
+table thead tr, tfoot {
+    background-color: #343224;
+}
+
+td {
+    padding: 1.3em;
+    font-size: 14px;
+    color: #343224;
+    font-weight: 400;
+}
+
+th {
+    padding-left: 2rem;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+thead, tfoot {
+    background-color: #343224;
+    height: 5vh;
+}
+
+thead tr {
+    color: white;
+    font-size: 14px;
+}
+
+thead tr, tbody tr {
+    position: relative;
+}
+
+input {
+    position: absolute;
+    left: 0;
+}
+
+.circuloContainer {
+    width: 77vw;
+    display: flex;
+    justify-content: center;
+}
+
+.circulo {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: #009E9A;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circulo .numero {
+    color: white;
+}
+
+.seta, .setas {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    color: #009E9A;
+    cursor: pointer;
+}
+
+.seta {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.setaSpan {
+    margin-left: -6px;
+}
+
+td:not(.statusTd) {
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.statusTd {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.imagens {
+    display: flex;
+    padding-right: 2rem;
+}
+
+.infoContato, .lixeira {
+    padding: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.infoContato {
+    border: 1px solid #40CFCB;
+}
+
+.lixeira {
+    margin-left: 30%;
+    border: 1px solid #AC0303;
+}

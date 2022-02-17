@@ -1,0 +1,9 @@
+div {
+    display: flex;
+}
+
+@media only screen and (max-width: 640px) {
+    div {
+        flex-direction: column;
+    }
+}

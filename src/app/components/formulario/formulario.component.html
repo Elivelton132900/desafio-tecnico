@@ -1,0 +1,81 @@
+<div class="containerForm">
+    <div class="wrapForm">
+        <h4 class="voltarPagina" routerLink="">
+            <span class="seta">&larr; </span>Voltar para página anterior
+        </h4>
+        <h2 *ngIf="atualizarCadastroUrl" class="cabecalho">Atualização de Indicação</h2>
+        <h2 *ngIf="!atualizarCadastroUrl" class="cabecalho">Cadastro de novas indicações</h2>
+        <form>
+            <div class="containerCabecalho">
+                <h2 class="cabecalhoForm">Dados do cliente</h2>
+            </div>
+            <div class="containerInputs">
+                <div class="containerInput">
+                    <label>Nome completo</label>
+                    <input
+                        [(ngModel)]="formulario.nome"
+                        name="nome"
+                        placeholder="Digite aqui o nome completo do cliente"
+                        type="text"
+                    />
+                </div>
+
+                <div class="containerInput">
+                    <label>Telefone</label>
+                    <input 
+                        [(ngModel)]="formulario.telefone"
+                        name="telefone"
+                        placeholder="DDD + Telefone" 
+                        type="text"
+                    />
+                </div>
+                <div class="containerInput">
+                    <label>Empresa - opcional</label>
+                    <input
+                        [(ngModel)]="formulario.empresa"
+                        name="empresa"
+                        placeholder="Digite aqui o nome da empresa"
+                        type="text"
+                    />
+                </div>
+                <div class="containerInput">
+                    <label>E-mail</label>
+                    <input
+                        [(ngModel)]="formulario.email"
+                        name="email"
+                        placeholder="Digite aqui o e-mail do cliente"
+                        type="text"
+                    />
+                </div>
+                <div class="containerInput">
+                    <label>Corretor</label>
+                    <input
+                        [(ngModel)]="formulario.corretor"
+                        name="email"
+                        placeholder="Digite aqui o nome do corretor"
+                        type="text"
+                    />
+                </div>
+            </div>
+        </form>
+
+        <div class="containerButtons">
+            <button class="cancelar" routerLink="">Cancelar</button>
+            <button (click)="verificaFormulario()"
+                class="salvar"
+            >
+                Salvar e continuar
+            </button>
+        </div>
+        <app-modal [mostrar]="mostrarModal">
+            <div class="containerCorpoModal">
+                <h4>Indicação salva com sucesso.</h4>
+            </div>
+            <div class="modalButtonContainer">
+                <button class="fecharButton" routerLink="/">
+                    Fechar
+                </button>
+            </div>
+        </app-modal>
+    </div>
+</div>

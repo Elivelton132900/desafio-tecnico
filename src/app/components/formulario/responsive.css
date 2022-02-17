@@ -1,0 +1,114 @@
+@media only screen and (max-width: 682px) {
+    .containerButtons {
+        margin-top: 2vh;
+    }
+
+    form .containerInputs {
+        margin-left: 3vw;
+        margin-right: 0vw;
+    }
+
+    form .containerInput {
+        margin-right: 10px;
+        margin-bottom: 2vh;
+    }
+
+    form .containerInput input {
+        width: 32vw;
+    }
+
+    .containerButtons button {
+        min-width: fit-content;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    form {
+        height: auto;
+    }
+
+    .wrapForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerForm {
+        margin-top: 0vh;
+    }
+
+    form .containerInput input {
+        padding-left: 1px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 10px;
+    }
+
+    input:-moz-placeholder {
+        font-size: 10px;
+    }
+
+    textarea:-moz-placeholder {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+
+    form {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    h4 {
+        padding: 2.4vw;
+    }
+
+    .wrapForm {
+        margin-left: 0vw;
+        margin-bottom: 0vh;
+    }
+
+    .cabecalho {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .containerInputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerCabecalho {
+        padding-top: 1vh;
+    }
+
+    .cabecalhoForm {
+        text-align: center;
+    }
+
+    form .containerInput input {
+        width: 60vw;
+    }
+
+    .containerInput label {
+        text-align: center;
+    }
+
+    .containerInput {
+        margin-bottom: 0vh;
+    }
+
+    .containerButtons {
+        width: 95vw;
+        margin-bottom: 5vh;
+    }
+
+    form .containerInput input {
+        padding-left: 10px;
+    }
+}

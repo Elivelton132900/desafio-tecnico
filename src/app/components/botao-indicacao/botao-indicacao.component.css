@@ -1,0 +1,18 @@
+button {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(64, 207, 203);
+    border-radius: 4px;
+    border: none;
+    height: 35px;
+    width: 190px;
+    cursor: pointer;
+    transition: ease-in 400ms;
+}
+
+button:hover {
+    background-color: rgb(14, 142, 201);
+}

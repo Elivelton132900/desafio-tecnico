@@ -1,0 +1,21 @@
+main {
+    margin-top: 7vh;
+    min-height: 93vh;
+    background-color: #F7F7F7;
+    min-width: 100vw;
+}
+
+.cardsContainer {
+    display: flex;
+}
+
+.containerMain {
+    margin-left: 4vw;
+}
+
+.cabecalho {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgba(52, 50, 36, 1);
+    margin-bottom: 3vh;
+}

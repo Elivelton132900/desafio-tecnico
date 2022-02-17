@@ -1,0 +1,62 @@
+<div class="indicacaoDetalhesContainer" *ngFor="let i of item">
+    <div class="wrapIndicacaoDetalhes">
+        <h4 class="voltarPagina" routerLink="">
+            <span class="seta">&larr; </span>Voltar para página anterior
+        </h4>
+        <h2 class="cabecalho">Detalhes da indicação</h2>
+    <div class="flex">
+        <div class="cardInformacoesBasica">
+            <div class="wrapInformacoesBasica">
+                <div class="header">
+                    <h3 class="InfosBasicasCabecalho">Informações básicas</h3>
+                    <img
+                        routerLink="/atualizar/{{ i.id }}"
+                        class="iconEdicao"
+                        src="../../../assets/icons/caneta.png"
+                    />
+                </div>
+                <div class="informacoesContainer">
+                    <div class="informacao primeiraInfo">
+                        <h4 class="infoLabel">Nome Completo</h4>
+                        <h3 class="infoEspec">{{ i.nome }}</h3>
+                    </div>
+                    <div class="informacao">
+                        <h4 class="infoLabel">Telefone</h4>
+                        <h3 class="infoEspec">{{ i.telefone }}</h3>
+                    </div>
+                    <div class="informacao">
+                        <h4 class="infoLabel">E-mail</h4>
+                        <h3 class="infoEspec">{{ i.email }}</h3>
+                    </div>
+                    <div class="informacao">
+                        <h4 class="infoLabel">Empresa</h4>
+                        <h3 class="infoEspec">{{ i.empresa }}</h3>
+                    </div>
+
+                    <div class="informacao">
+                        <h4 class="infoLabel">Corretor</h4>
+                        <h3 class="infoEspec">{{ i.corretor }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="statusContainer">
+            <div class="contInfos">
+                <h4 class="status">Status: 
+                    <span class="statusEspec">{{ i.status }}</span> 
+                </h4>
+                <img
+                    routerLink="/atualizar/{{ i.id }}"
+                    class="iconEdicao"
+                    src="../../../assets/icons/caneta.png"
+            />
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+

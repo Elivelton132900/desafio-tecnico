@@ -1,0 +1,34 @@
+.card {
+    width: 340px;
+    max-width: 19vw;
+    min-width: 50px;
+    background-color: white;
+    height: 15vh;
+    margin-right: 0.5vw;
+    box-shadow: 10px 11px 4px -6px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 10px 11px 4px -6px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 11px 4px -6px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 250ms ease-in;
+    color: rgba(0, 158, 154, 1);
+}
+
+.card .situacao, .card .quantidade {
+    margin-left: 0.5rem;
+}
+.card .quantidade {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.card .situacao {
+    font-size: 14px;
+}
+
+.card:hover {
+    background-color: #009E9A;
+    color: white;
+}
+

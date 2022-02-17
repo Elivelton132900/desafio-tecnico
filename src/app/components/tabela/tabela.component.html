@@ -1,0 +1,48 @@
+<div class="container">
+    <table>
+        <thead class="cabecalhoTable" id="thead">
+            <tr>
+                <th><input class="inputNome" type="checkbox" />Nome</th>
+                <th>Corretor/Corretora</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let infos of tabela">
+                <td><input type="checkbox" />{{ infos.nome }}</td>
+                <td>{{ infos.corretor }}</td>
+                <td class="statusTd">
+                    {{ infos.status }}
+                    <div class="imagens">
+                        <img
+                            routerLink="/indicacao/{{ infos.id }}"
+                            src="../../../assets/icons/informacoes-para-contato.png"
+                            class="infoContato"
+                        />
+                        <img
+                            routerLink="/deletar/{{ infos.id }}"
+                            src="../../../assets/icons/lixeira.png"
+                            class="lixeira"
+                        />
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3"></td>
+        </tfoot>
+    </table>
+</div>
+
+<div class="circuloContainer">
+    <div class="circulo"><span class="numero">1</span></div>
+    <div class="circulo"><span class="numero">2</span></div>
+    <div class="circulo"><span class="numero">3</span></div>
+    <div class="circulo"><span class="numero">...</span></div>
+    <div class="circulo"><span class="numero">10</span></div>
+    <div class="seta">&#5171;</div>
+    <div class="setas">
+        <span class="setaSpan">&#5171;</span>
+        <span class="setaSpan">&#5171;</span>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 640px) {
+    .indicacaoDetalhesContainer {
+        margin-top: 0vh;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .wrapIndicacaoDetalhes {
+        margin: 0vw
+    }
+
+    .statusContainer {
+        min-width: 200px;
+        margin-top: 4vw;
+    }
+
+    .cabecalho {
+        margin-top: 4vh;
+        text-align: center;
+    }
+
+    .flex {
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cardInformacoesBasica {
+        width: 80%;
+    }
+
+    .informacao {
+        width: 100%;;
+    }
+}

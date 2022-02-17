@@ -52,8 +52,7 @@
     
     tr .statusTd {
         display: flex;
-        width: 37%;
-
+        width: 20vw;
         flex-direction: column;
     }
 
